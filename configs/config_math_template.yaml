@@ -1,7 +1,7 @@
 # config.yaml
 
 # ================================
-# 系统提示
+# System Prompts
 # ================================
 system_prompts:
   default: |
@@ -9,7 +9,7 @@ system_prompts:
   error_handling: |
     
 # ================================
-# 领域推理设置
+# Domain Inference Settings
 # ================================
 domain_inference_settings:
   stem:
@@ -229,10 +229,10 @@ domain_inference_settings:
       historical_similarity: 0.3
 
 
-  # 可以在此处添加更多领域配置...
+  # You can add more domain configurations here...
 
 # ================================
-# 知识图谱
+# Knowledge Graph
 # ================================
 knowledge_graph:
   stem:
@@ -301,9 +301,9 @@ knowledge_graph:
 
 
 # ================================
-# 专家定义
+# Expert Definitions
 # ================================
-# 专家角色定义
+# Expert Role Definitions
 experts:
   stem:
     - name: "Math Analysis Expert"
@@ -360,10 +360,10 @@ experts:
       prior_alpha: 3
       prior_beta: 2
 
-  # 可以在此处添加更多领域的专家定义...
+  # You can add more expert definitions for other domains here...
 
 # ================================
-# 整合器定义
+# Integrator Definition
 # ================================
 integrator:
   default:
@@ -413,40 +413,31 @@ integrator:
 
 
 # ================================
-# 模型管理
+# Model Management
 # ================================
 models:
-  default: "Qwen/Qwen2.5-72B-Instruct-Turbo"  # 全局默认模型
-  # 可以在此处定义其他模型版本，如有需要
+  default: "Qwen/Qwen2.5-72B-Instruct-Turbo"  # Global default model
+  # You can define other model versions here if needed
   # e.g.,
   # qa_model: "Qwen/Qwen2.5-72B-Instruct-Turbo-QA"
   # academic_model: "Qwen/Qwen2.5-72B-Instruct-Turbo-Academic"
 
 # ================================
-# LLM API 配置
+# LLM API Configuration
 # ================================
 llm_api:
-  provider: "together"  # LLM 提供商名称，如 "together"、"openai"、"huggingface" 等
-  api_key: "${TOGETHER_API_KEY}"  # 使用环境变量管理API密钥，确保安全性
+  provider: "together"  # LLM provider name, e.g., "together", "openai", "huggingface", etc.
+  api_key: "${TOGETHER_API_KEY}"  # Use environment variable for API key for security
 
 # ================================
-# 日志设置
+# Logging Settings
 # ================================
 logging:
-  level: "INFO"  # 日志级别，可选值：DEBUG, INFO, WARNING, ERROR, CRITICAL
-  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"  # 日志格式
+  level: "INFO"  # Log level: DEBUG, INFO, WARNING, ERROR, CRITICAL
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"  # Log format
   handlers:
     - type: "file"
-      filename: "moa_system.log"  # 日志文件路径
+      filename: "moa_system.log"  # Log file path
     - type: "stream"
-      stream: "stdout"  # 控制台输出
+      stream: "stdout"  # Console output
 
-# ================================
-# 其他配置（如有需要）
-# ================================
-# 可以在此处添加其他全局配置项，例如：
-# database:
-#   host: "localhost"
-#   port: 5432
-#   user: "${DB_USER}"
-#   password: "${DB_PASSWORD}"

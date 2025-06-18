@@ -11,7 +11,6 @@ logging.basicConfig(level=logging.INFO)
 class LLMClient:
     """
     Wrapper for interacting with the Together API.
-    Supports replacement with other LLM providers (such as Hugging Face or OpenAI) by inheriting this class.
     """
 
     def __init__(

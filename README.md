@@ -13,9 +13,8 @@
 
 KABB (Knowledge-Aware Bayesian Bandits) is a dynamic expert coordination framework for multi-agent systems, featuring:
 
-1. **3D Knowledge Distance Model** — Semantic matching between experts and tasks.
-2. **Dual Adaptation Mechanism** — Continuous optimization of expert representation and selection.
-3. **Knowledge-Aware Thompson Sampling** — Efficient expert selection in Bayesian MAB with knowledge distance.
+1. **Dual Adaptation Mechanism** — Continuous optimization of expert representation and selection.
+2. **Knowledge-Aware Thompson Sampling** — Efficient expert selection in Bayesian MAB with knowledge distance.
 
 See the [paper](https://arxiv.org/abs/2502.07350) for theoretical details and full experiments.
 
@@ -99,9 +98,6 @@ If you use this project, please cite:
 
 ## Contributing
 - Fork and create a new branch
-- Ensure tests pass (`pytest`)
-- Follow PEP 8 and use `black` for formatting
-- Add tests and docs for new features
 - Link related issues in PRs
 
 ---
