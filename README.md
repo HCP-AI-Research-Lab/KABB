@@ -99,7 +99,7 @@ If you use this project, please cite:
 
 ## Contributing
 - Fork and create a new branch
-- Link related issues in PRs
+- Link related issues in PRs 
 
 ---
 
